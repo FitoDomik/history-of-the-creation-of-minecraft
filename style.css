@@ -1,0 +1,214 @@
+:root{
+  --color1:black;
+  --color2:white;
+  --kartinka:url(images/moon.png);
+}
+input:checked~*{
+  --color1:white;
+  --color2:rgb(29, 29, 29);
+  --kartinka:url(images/sun.png);
+}
+body>input{
+  display: none;
+}
+header>label{
+  display: flex;
+  justify-content: flex-end;
+  background-image: var(--kartinka);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin: 1%;
+}
+body{
+  margin: 0;
+  background-image: url(images/tile_background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 25px;
+}
+
+article>p, article>h1, article>h2, article>h3, article>ul {
+  transform: translateX(-200%);
+  transition: transform 0.5s, opacity 0.5s;
+}
+img {
+  transform: translateX(300%);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+main{
+  padding: 0;
+}
+header{
+  background-position: center center;
+  background-image: url(images/maineheader.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 1px 0 1px 0;
+}
+header>h1{
+  font-family: Andale Mono, monospace;
+  color: white;
+  font-size: 75px;
+  padding: 30% 3% 0;
+  text-shadow: 0 15px 30px black, 0 -15px 30px blue;
+}
+main>nav{
+  font-family: Andale Mono, monospace;
+  background-color: black;
+  margin: 0;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+nav>a{
+  text-decoration:none;
+  color: white;
+  margin: 20px;
+}
+.signIn{
+  color: rgb(85, 70, 173);
+}
+nav>a:hover{
+  color: rgb(126, 63, 63);
+}
+nav>a:active{
+  color: red;
+}
+.block{
+  background-color: var(--color2);
+  margin: 10%;
+  padding: 5% 5%;
+  border-radius: 10px;
+  font-family: Andale Mono, monospace;
+  color: var(--color1);
+}
+.blockimg{
+  margin: 0 10%;
+  width: 80%;
+  border-radius: 5px;
+}
+.CaveGame{
+  color: purple;
+  font-size: 60px;
+  font-family: 'Dancing Script';
+}
+.Minecraft{
+  color: #5FBE4B;
+  font-size: 60px;
+  font-family: 'MinecrafterAltRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+.Classic{
+  color: black;
+  font-size: 60px;
+  font-family: 'Dancing Script';
+}
+.inlimg{
+  display: inline-block;
+  margin: 0 2%;
+  width: 25%;
+  border-radius: 5px;
+}
+.inbl{
+  display: inline-block;
+  width: 65%;
+  text-align: justify;
+}
+div{
+  margin: 100px;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+textarea {
+  width: 100%;
+  white-space: nowrap;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.menu_small_icon{
+  display: none;
+}
+.stick {
+  width: 70px;
+  height: 5px;
+  background: rgb(255, 255, 255);
+  margin: 15px;
+}
+.menu_small_item {
+  display: none;
+  transform: translateX(-100%);
+  top: 95px;
+}
+.error {
+  color: red;
+}
+/*article>p, article>h1, article>h2, article>h3, article>ul {
+  transform: translateX(-200%);
+}
+.inlimg {
+  transform: translateX(600%);
+}
+img {
+  transform: translateX(200%);
+}*/
+
+footer{
+  background-position: center center;
+  background-image: url(images/Minefooter.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 1);
+  padding: 0 0 1px 0;
+}
+footer>p{
+  font-family: Andale Mono, monospace;
+  font-size: 22px;
+  color: white;
+  padding: 5% 5%;
+  text-shadow: 5px 5px 10px black;
+  margin: 0 0 0 0;
+}
+@media (min-width: 767px) and (max-width: 1199px) {
+  .block{
+      margin: 5%;
+  }
+}
+.light-dark{
+  position: fixed;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .block {
+      margin: 0;
+      border-radius: 0;
+  }
+  .menu_small_icon{
+    display: block;
+    padding: 10px 0 10px 50px;
+  }
+  .menu_small_item {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu{
+    display: none;
+  }
+}

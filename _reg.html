@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraft" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+</head>
+<body>
+    <article class="block">
+    <a class="signIn" href="index.html">На главную</a>
+    <div>
+      <h1>Вход от имени администратора</h1>
+      <p>Пожалуйста, заполните эту форму, чтобы продолжить.</p>
+      <hr>
+        <label for="email"><b>Логин</b></label>
+        <input type="text" placeholder="Введите логин" name="email" required>
+        <label for="psw"><b>Пароль</b></label>
+        <input type="password" placeholder="Введите пароль" name="psw" required>
+    <hr>
+  
+      <button class="log" type="submit" onclick="handle()">Войти</button>
+      <p class="error"></p>
+    </div>
+    </article>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="anime.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
